@@ -1,0 +1,25 @@
+#Hello, in this page I'm going to tell you how to run flask application in your computer. 
+#Please remind that all of this are from my understanding only, correct me if I'm wrong, Thanks.
+
+#1) open cmd prompt, create a file by type: mkdir file_name
+#2) link your cmd prompt to that file: cd file_name
+#3) You have add python file in that file: touch pythonfile.py
+#4) Now important part is, you gonna need both flask and venv file. To install flask, just type: pip install Flask. Once you finish installing flask, proceed to venv file 
+    by type: python -m venv venv. Ok, now, you're all set.
+#5) Open python editor and open your pythonfile.py, in that blank page. You can start write a code: 
+
+    from flask import Flask 
+    
+    app = Flask(__name__)
+    
+    #API router 
+    @app = ("/")
+    def hello():
+        return"<h1>Hello, world!</h1>" 
+        
+     if __name__ == "__main__":
+        app.Run()
+        
+#6) Back to cmd prompt, run that python file: python pythonfile.py 
+#7) Now go to google.com. Type link: localhost:5000
+#8) You'll see Hello, world! appear on your screen. 
